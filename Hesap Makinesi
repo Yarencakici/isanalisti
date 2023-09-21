@@ -1,0 +1,25 @@
+Number1= float(input("İlk sayıyı girin: "))
+Number2= float(input("ikinci sayıyı girin: "))
+process= input("yapmak istediğiniz işlemi seçin (+, -, \, *): ")
+
+if process == "+":
+    Result = Number1 + Number2
+    print("result", Result)
+
+elif process == "-":
+    Result = Number1 - Number2
+    print("result", Result)
+
+elif process == "*":
+    Result = Number1 * Number2
+    print("result", Result)
+
+elif process == "/":
+    Result = Number1 / Number2
+    print("result", Result)
+
+
+else:
+     print("lütfen dorğu bir işlem seçiniz (+, -, \, *): ")
+
+#Gizem Karaarduç ile yapılan pair çalışması.
