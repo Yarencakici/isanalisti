@@ -1,0 +1,47 @@
+def toplama(num1,num2):
+    print(num1 + num2) 
+
+def cikarma(num1,num2):
+    print(num1 - num2)
+
+def carpma(num1,num2):
+    print(num1 * num2)
+
+def bolme(num1,num2):
+    print(num1 / num2)
+
+def mod(num1,num2):
+    print(num1 % num2)
+
+while True:
+    print("Lütfen Menüden yapmak istediğiniz işlemi seçiniz:")
+    print("Toplama (+)")
+    print("Çıkarma (-)")
+    print("Çarpma  (*)")
+    print("Bölme   (/)")
+    print("Mod     (%)")
+    print("Çıkmak için 'q' tuşuna basınız.")
+
+    process = input("yapmak istediğiniz işlemi seçiniz ():")
+    if process == "q":
+       print("program sonlandırıldı")
+       break
+    if process != ("+", "-", "*", "/", "%"):
+        print("Lütfen doğru bir işlem seçiniz")
+        break
+    
+    num1=int(input("İlk sayıyı girin: ")) 
+    num2=int(input("İkinci sayıyı girin: "))
+    
+    if process == "+":
+        toplama(num1,num2)
+    elif process == "-":
+        cikarma(num1,num2)
+    elif process == "*":
+        carpma(num1,num2)
+    elif process == "/":
+        bolme(num1,num2)
+    elif process == "%":
+        mod(num1,num2)
+
+#Gizem Karaarduç ile pair Çalışması
